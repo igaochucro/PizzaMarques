@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caixa — Bella Massa</title>
+  <link rel="stylesheet" href="css/xupador.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="mark">🍕</span>Bella Massa — Caixa</div>
+    <button class="btn btn-ghost" data-logout>Sair</button>
+  </header>
+  <main class="shell">
+    <div class="layout">
+      <aside class="side">
+        <div class="kicker">ÁREA RESTRITA</div>
+        <h1>Caixa</h1>
+        <p>Esta tela só fica disponível para usuários autenticados.</p>
+        <ul class="facts"><li><span class="dot"></span>Usuário: <span data-user>verificando...</span></li><li><span class="dot"></span>Authentication ativo</li><li><span class="dot"></span>Firestore protegido por Rules</li></ul>
+      </aside>
+      <section class="content">
+        <div class="content-head"><div><h2>Caixa financeiro</h2><div class="sub">Área protegida pelo Route Guard.</div></div></div>
+        <div class="empty-state"><span class="emoji">🔐</span><div class="title">Acesso autorizado</div><div class="sub">Se você está vendo esta tela, o Firebase Authentication confirmou seu usuário.</div></div>
+        <div style="margin-top:18px"><a class="btn btn-primary" href="GRAZY.html">Abrir sistema</a></div>
+      </section>
+    </div>
+  </main>
+  <script type="module" src="auth-guard.js"></script>
+</body>
+</html>
